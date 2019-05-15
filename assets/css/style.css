@@ -5,6 +5,16 @@
 	text-decoration: none;
 	box-sizing: border-box;
 }
+@keyframes fadeInRight {
+	0% {
+		opacity: 0;
+		transform: translateX(50px);
+	}
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
 button {
 	border: none;
 	background: none;
@@ -286,10 +296,6 @@ li.ka, li.ru {
   opacity: 0;
   box-sizing: border-box;
 }
-.arrows_anim  span:nth-of-type(1) {
-  -webkit-animation-delay: 2s;
-  animation-delay: 0s;
-}
 .arrows_anim  span:nth-of-type(2) {
   bottom: -15px;
   -webkit-animation-delay: .15s;
@@ -374,9 +380,26 @@ li.ka, li.ru {
 }
 /*choose car end*/
 /*about*/
+.about {
+	animation-name: fadeInRight;
+	animation-duration: 2s;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+}
 .about_title {
 	padding: 54px 0;
 	font-size: 32px;
+	animation: fade_down 2s;
+}
+@keyframes fade_down {
+  0% {
+    opacity: 0;
+    transform: translateY(-54px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
 }
 .about_wrapper {
 	display: grid;
