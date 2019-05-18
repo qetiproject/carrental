@@ -11,11 +11,9 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
 	<!-- custom css -->
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
-	<link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
-	<link rel="stylesheet" type="text/css" href="assets/css/fonts.css">
 </head>
 <body>
-	<!-- contact_info -->
+	<!-- top_header -->
 	<div class="top_header">
 		<div class="container">
 			<div class="header">
@@ -27,88 +25,74 @@
 			</div>
 		</div>
 	</div>
-	<!-- contact_info end -->
+	<!-- top_header end -->
+	<!-- header -->
+	<header>
+		<div class="container">
+			<div class="header_content">
+				<a href="index.html">
+					<img src="assets/images/static/logo.svg" alt="star_logo" title="Star Logo">
+				</a>
+				<nav id="menu" class="header_menu">
+					<ul class="header_navigation">
+						<li class="header_link"><a href="#!">home</a></li>
+						<li class="header_link"><a href="#!">cars</a></li>
+						<li class="header_link"><a href="#!">conditions</a></li>
+						<li class="header_link"><a href="#!">tours in georgia</a></li>
+						<li class="header_link"><a href="#!">contact us</a></li>
+					</ul>
+				</nav>
+				<div class="toggle_menu"></div>
+				<ul class="lang">
+					<li class="en">EN</li>
+					<li class="ka">KA</li>
+					<li class="ru">RU</li>
+				</ul>
+				<ul class="social_icons">
+					<li>
+						<a href="https://www.facebook.com/" target="_blank">
+							<span class="icon icon-fb "></span>
+						</a>
+					</li>
+					<li>
+						<a href="https://www.instagram.com/" target="_blank">
+							<span class="icon-viber "></span>
+						</a>
+					</li>
+					<li>
+						<a href="#!" target="_blank">
+							<span class="icon-skype "></span>
+						</a>
+					</li>
+					<li>
+						<a href="https://www.viber.com/" target="_blank">
+							<span class="icon-viber "></span>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</header>
 	<!-- hero -->
 	<div class="hero">
-		<div class="box"></div>
-		<div class="hero_content">
-			<!-- header -->
-			<header>
-				<div class="container">
-					<div class="header_content">
-						<a href="index.html">
-							<img src="assets/images/static/logo.svg" alt="star_logo" title="Star Logo">
-						</a>
-						<nav id="menu" class="header_menu">
-							<ul class="header_navigation">
-								<li class="header_link"><a href="#!">home</a></li>
-								<li class="header_link"><a href="#!">cars</a></li>
-								<li class="header_link"><a href="#!">conditions</a></li>
-								<li class="header_link"><a href="#!">tours in georgia</a></li>
-								<li class="header_link"><a href="#!">contact us</a></li>
-							</ul>
-						</nav>
-						<div class="wrapper">
-						<ul class="lang">
-							<li class="en">EN</li>
-							<li class="ka">KA</li>
-							<li class="ru">RU</li>
-						</ul>
-						<ul class="social_icons">
-							<li>
-								<a href="https://www.facebook.com/" target="_blank">
-									<span class="icon-fb"></span>
-								</a>
-							</li>
-							<li>
-								<a href="https://www.instagram.com/" target="_blank">
-									<span class="icon-viber"></span>
-								</a>
-							</li>
-							<li>
-								<a href="#!" target="_blank">
-									 <span class="icon-skype"></span>
-								</a>
-							</li>
-							<li>
-								<a href="https://www.viber.com/" target="_blank">
-									<span class="icon-viber"></span>
-								</a>
-							</li>
-						</ul>
-					</div>
+		<div class="container">
+			<div class="hero_content">
+				<div class="left_side">
+					<h1 class="left_side_title">TREAT YOURSELF IN GEORGIA</h1>
+					<div class="sel_location">
+						<select name="sel_location">
+							<option value="Select Pickup Location" selected="">Select Pickup Location</option>
+							<option value="Tbilisi Office">Tbilisi Office</option>
+							<option value="Tbilisi Office">Tbilisi Office</option>
+							<option value="Tbilisi Office">Tbilisi Office</option>
+						</select>
 					</div>
 				</div>
-			</header>
-			<!-- header end -->
-			<div class="main_section_bg">
-				<div class="container">
-					<div class="main_section">
-						<div class="left_side">
-							<h1 class="main_section_title">TREAT YOURSELF IN GEORGIA</h1>
-							<div class="sel_location">
-								<select name="sel_location">
-									<option value="Select Pickup Location" selected="">Select Pickup Location</option>
-									<option value="Tbilisi Office">Tbilisi Office</option>
-									<option value="Tbilisi Office">Tbilisi Office</option>
-									<option value="Tbilisi Office">Tbilisi Office</option>
-								</select>
-							</div>
-						</div>
-						<div class="right_side">
-							<img src="assets/images/jeep.png" alt="jeep">
-						</div>
-						<!-- scroll_down -->
-						<div class="scroll_down">
-							<a class="scroll_down_anim" onclick="scrollBottom()" href="#!"></a>
-							<a class="arrows_anim" href="#!">
-								<span></span><span></span>
-							</a>
-						</div>
-						<!-- scroll_down end -->
-					</div>
+				<div class="right_side">
+					<img src="assets/images/jeep.png" alt="jeep">
 				</div>
 			</div>
+			<div class="box"></div>
 		</div>
 	</div>
 	<!-- hero end -->
@@ -116,6 +100,14 @@
 	<section class="choose_car">
 		<div class="container">
 			<h2 class="choose_car_title">Choose Car</h2>
+			<!-- scroll_down -->
+			<div class="scroll_down">
+				<a class="scroll_down_anim" onclick="scrollBottom()" href="#!"></a>
+				<a class="arrows_anim" href="#!">
+					<span></span><span></span>
+				</a>
+			</div>
+			<!-- scroll_down end -->
 			<div class="car_slider">
 				<div class="swiper-container car_slider_container">
 					<ul class="swiper-wrapper">
@@ -297,7 +289,7 @@
 		<div class="footer">
 				<p>Carrental.ge © 2019</p>
 				<a href="https://smartweb.ge/" target="_blank">
-					<img src="/assets/images/static/smartweb.svg" alt="smartweb" title="SmartWeb">
+					<img src="assets/images/static/smartweb.svg" alt="smartweb" title="SmartWeb">
 				</a>
 			</div>
 	</footer>
