@@ -1,3 +1,12 @@
+ // resp_menu
+ const toggler_item = document.querySelector(".toggler_item");
+ const resp_menu = document.querySelector(".resp_menu");
+ const toggler_menu = document.getElementById('menu');
+
+  resp_menu.addEventListener('click', function(){
+    toggler_item.classList.toggle('open');
+    toggler_menu.classList.toggle('resp_toggler_menu');
+  })
  // scroll_down
   function scrollBottom(x,y){
     window.scrollTo(0, document.body.scrollHeight);
@@ -77,4 +86,3 @@
     
   }
 });
-
