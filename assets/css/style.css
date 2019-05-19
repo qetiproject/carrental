@@ -694,9 +694,9 @@ header {
 		display: flex;
 		justify-content: space-between;
 	}
-	.icon {
+/* 	.icon {
 		color: #fff;
-	}
+	} */
 	/*social_icons end*/
 	/*header end*/
 }
