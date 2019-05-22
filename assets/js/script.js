@@ -11,6 +11,8 @@
   function scrollBottom(x,y){
     window.scrollTo(0, document.body.scrollHeight);
 }
+
+// sliders
  var swiper = new Swiper('.car_slider_container', {
       slidesPerView: 4,
       spaceBetween: 30,
@@ -86,3 +88,24 @@
     
   }
 });
+
+// form
+
+var dropDown = document.getElementById("form_dropdown");
+var hidden = document.getElementById("choose_hidden")
+
+dropDown.addEventListener("click", function(){
+  dropDown.classList.toggle("dropdown_active");
+  hidden.classList.toggle("choose_active");
+})
+
+
+var options = document.getElementsByClassName("select_option");
+var sname = document.getElementById("select_name");
+
+
+for(let i = 0; i < options.length; i++) {
+    options[i].addEventListener("click", function(){
+      sname.textContent = options[i].textContent;
+    })
+}
