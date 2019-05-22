@@ -19,9 +19,9 @@
 			<div class="header">
 				<ul class="contact_info">
 					<li>24/7 EMERGENCY CERVICE</li>
-					<li><a href="#!">+ ‎995 570 700330</a></li>
+					<li><a href="+ ‎995 570 700330">+ ‎995 570 700330</a></li>
 				</ul>
-				<a href="#!" class="mobile">+995 592 599995</a>
+				<a href="+995 592 599995" class="mobile">+995 592 599995</a>
 			</div>
 		</div>
 	</div>
@@ -35,7 +35,7 @@
 				</a>
 				<nav id="menu" class="header_menu">
 					<ul class="header_navigation">
-						<li class="header_link"><a href="#!">home</a></li>
+						<li class="header_link"><a href="index.html">home</a></li>
 						<li class="header_link"><a href="#!">cars</a></li>
 						<li class="header_link"><a href="#!">conditions</a></li>
 						<li class="header_link"><a href="#!">tours in georgia</a></li>
@@ -45,10 +45,10 @@
 				<ul class="resp_menu">
 					<li class="toggler_item"></li>
 				</ul>
-				<ul class="lang">
-					<li class="active">EN</li>
-					<li class="ka">KA</li>
-					<li class="ru">RU</li>
+				<ul class="lang_wrapper">
+					<li class="active_lang">EN</li>
+					<li class="ka lang">KA</li>
+					<li class="ru lang">RU</li>
 				</ul>
 				<ul class="social_icons">
 					<li>
@@ -82,19 +82,25 @@
 				<div class="left_side">
 					<h1 class="left_side_title">TREAT YOURSELF IN GEORGIA</h1>
 					<div class="sel_location">
-						<select name="sel_location">
-							<option value="Select Pickup Location" selected="">Select Pickup Location</option>
-							<option value="Tbilisi Office">Tbilisi Office</option>
-							<option value="Tbilisi Office">Tbilisi Office</option>
-							<option value="Tbilisi Office">Tbilisi Office</option>
-						</select>
+						<ul class="dropdown_select" id="form_dropdown">
+							<li>
+								<span class="select_name" id="select_name">Tbilisi</span>
+							</li>
+							<li>
+								<ul class="choose_hidden" id="choose_hidden">
+									<li class="select_option">gori</li>
+									<li class="select_option">qutaisi</li>
+									<li class="select_option">batuimi</li>
+								</ul>
+							</li>
+						<img class="sel_location_icon" src="assets/images/static/sel_locaion_icon.svg" alt="sel_locaion_icon" aria-hidden="true" />
+						</ul>
 					</div>
 				</div>
 				<div class="right_side">
 					<img src="assets/images/jeep.png" alt="jeep">
 				</div>
 			</div>
-<!-- 			<div class="box"></div> -->
 		</div>
 	</div>
 	<!-- hero end -->
